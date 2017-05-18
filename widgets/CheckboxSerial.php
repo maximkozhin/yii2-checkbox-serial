@@ -30,7 +30,7 @@ class CheckboxSerial extends Widget
             throw new InvalidParamException("Parameter 'selectorClass' must be a string");
         }
 
-        if(!$this->id || !is_string($id)) {
+        if(!$this->id || !is_string($this->id)) {
             throw new InvalidParamException("Parameter 'id' must be a string");
         }
 
