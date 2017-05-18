@@ -37,6 +37,7 @@ class CheckboxSerial extends Widget
         $this->options['id'] = $this->id;
         $this->options['label'] = $this->label;
         $this->options['value'] = null;
+        $this->view->registerJs(
             "var checkboxes = document.querySelectorAll('input.{$this->selectorClass}');
              var checkall = document.getElementById('{$this->id}');
              for(var i=0; i < checkboxes.length; i++) {
